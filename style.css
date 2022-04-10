@@ -1,0 +1,105 @@
+/*リセットcss*/
+*{
+    padding: 0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+header{
+    height:50px;
+    background-color: #FF9A4B;
+    }
+
+.main{
+    width:960px;
+    display:flex;
+    margin:50px auto;
+    }
+
+.main-contents{
+    background-color: #EEEEEE;
+    width:300px;
+    display: inline-block;
+    position: relative;
+    margin-right: 30px;
+}
+
+.main-contents:last-child{
+    margin-right:0;
+}
+.main-title{
+    margin:15px 0 5px 0;
+    
+}
+
+
+.step{
+    background-color: #FF9A4B;
+    color:#ffffff;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+
+.content-box{
+    margin: 10px;
+    
+    
+}
+
+
+.main-box1{
+    height:150px;
+    background-image:url(img/flow01.png);
+    background-size:cover;
+    background-position: bottom;
+}
+.main-box2{
+    height:150px;
+    background-image:url(img/flow02.png);
+    background-size:cover;
+    background-position: bottom;
+}
+.main-box3{
+    height:150px;
+    background-image:url(img/flow03.png);
+    background-size:cover;
+    background-position: bottom;
+}
+
+.footer{
+    background-color: #AAAAAA;
+    height:50px;
+}
+    
+    
+/* 画面サイズ768px以下の際に適用される設定 */
+@media screen and (max-width: 768px) {
+  .main{
+      width:100%;
+      display: inline-block;
+        text-align: center;
+      
+  }
+  
+  .main-contents{
+      width:90%;
+      margin:0 auto 20px;
+      
+      
+        }
+  
+  .main-contents:last-child{
+      margin: 0 auto;
+  }
+  
+  .main-text,.main-title{
+      text-align: left;
+  }
+  
+  .boxes{
+      height:150px;
+  }
+ 
+}
